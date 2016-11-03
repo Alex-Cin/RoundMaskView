@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rmv_bgColor"
+    tools:context="com.alex.roundmaskview.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <org.alex.view.RatioRelativeLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/rmv_bgColor"
+            android:scaleY="0.625">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_w1"/>
+
+            <org.alex.roundmaskview.RoundMaskView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rmv_backgroundColor="@color/rmv_bgColor"
+                app:rmv_radius="8dp"
+                />
+        </org.alex.view.RatioRelativeLayout>
+
+        <org.alex.view.RatioRelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@color/rmv_bgColor"
+            android:scaleY="1.88">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_h1"/>
+
+            <org.alex.roundmaskview.RoundMaskView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rmv_backgroundColor="@color/rmv_bgColor"
+                app:rmv_radius="24dp"
+                />
+        </org.alex.view.RatioRelativeLayout>
+
+        <org.alex.view.RatioRelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@color/rmv_bgColor"
+            android:scaleY="0.625">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_w1"/>
+
+            <org.alex.roundmaskview.RoundMaskView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rmv_backgroundColor="@color/rmv_bgColor"
+                app:rmv_radius="4dp"
+                />
+        </org.alex.view.RatioRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/rmv_bgColor"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_w1"/>
+
+            <org.alex.roundmaskview.RoundMaskView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rmv_backgroundColor="@color/rmv_bgColor"
+                app:rmv_radius="8dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/rmv_bgColor"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_h1"/>
+
+            <org.alex.roundmaskview.RoundMaskView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rmv_backgroundColor="@color/rmv_bgColor"
+                app:rmv_radius="8dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

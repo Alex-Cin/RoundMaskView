@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundMaskView">
+
+        <attr name="rmv_backgroundColor" format="color"/>
+        <attr name="rmv_radius" format="dimension"/>
+        <attr name="rmv_bottomLeftRadius" format="dimension"/>
+        <attr name="rmv_bottomRightRadius" format="dimension"/>
+        <attr name="rmv_topLeftRadius" format="dimension"/>
+        <attr name="rmv_topRightRadius" format="dimension"/>
+    </declare-styleable>
+
+</resources>
